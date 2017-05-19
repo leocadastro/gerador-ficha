@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/master.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+  <div class="container-fluid col-md-8">
+
+    <div class="container-fluid col-md-4">
+      <h1>Gerar Ficha</h1>
+      <form>
+        <div class="form-group">
+          <label for="valor-texto">Digite o valor: </label>
+          <input type="text" class="form-control" id="valor-texto" placeholder="" onchange="jsfunction2()">
+        </div>
+        <div class="form-group">
+          <label for="valor-selecionado">Selecione o valor: </label>
+          <select class="form-control" id="valor-selecionado" onchange="jsfunction()">
+            <option value="1,00">R$ 1</option>
+            <option value="2,00">R$ 2</option>
+            <option value="5,00">R$ 5</option>
+            <option value="10,00">R$ 10</option>
+            <option value="20,00">R$ 20</option>
+            <option value="50,00">R$ 50</option>
+          </select>
+        </div>
+
+        <button type="button" onClick="jsPrint()" class="btn btn-primary">Imprimir</button>
+      </form>
+    </div>
+    <div class="col-md-2">
+
+    </div>
+
+    <h1>Ficha</h1>
+
+    <div class="content ficha">
+      <div id="printable" class="content">
+        <div id="left">
+          <div id="object1">
+            <img src="img/logo_greja.jpg" alt="" width="110px" height="120px">
+          </div>
+        </div>
+
+        <div id="right">
+          <div id="object3">SEJA BEM VINDO!</div>
+          <div id="object4">R$</div>
+          <div id="object5">1,00</div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
